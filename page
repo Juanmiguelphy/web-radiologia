@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayos X a Domicilio - Guayas | Asistencia 24/7</title>
+    <style>
+        /* --- ESTILOS VISUALES (NO TOCAR A MENOS QUE QUIERAS CAMBIAR COLORES) --- */
+        :root {
+            --color-primario: #0056b3; /* Azul Médico */
+            --color-secundario: #00a8cc; /* Celeste */
+            --color-texto: #333;
+            --color-fondo: #f4f7f6;
+            --color-blanco: #ffffff;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; color: var(--color-texto); line-height: 1.6; }
+        
+        /* Encabezado */
+        header { background-color: var(--color-primario); color: var(--color-blanco); padding: 1rem 0; position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        .logo { font-size: 1.5rem; font-weight: bold; }
+        nav a { color: var(--color-blanco); text-decoration: none; margin-left: 20px; font-weight: 500; }
+        
+        /* Botones */
+        .btn { display: inline-block; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .btn-urgencia { background-color: #e74c3c; color: white; } /* Rojo Urgencia */
+        .btn-primario { background-color: var(--color-primario); color: white; }
+        .btn-secundario { background-color: white; color: var(--color-primario); border: 2px solid var(--color-primario); }
+
+        /* Secciones */
+        .hero { background: linear-gradient(rgba(0,86,179,0.8), rgba(0,86,179,0.8)), url('https://source.unsplash.com/1600x900/?hospital,xray'); background-size: cover; color: white; text-align: center; padding: 100px 20px; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        
+        .container { max-width: 1100px; margin: 50px auto; padding: 0 20px; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+        
+        /* Sección Seguro */
+        .seguro-section { background-color: #e3f2fd; padding: 50px 20px; text-align: center; border-radius: 10px; border: 2px solid var(--color-primario); }
+        .precio { font-size: 3rem; color: var(--color-primario); font-weight: bold; }
+        
+        /* Sección Franquicia */
+        .franquicia-section { background-color: #333; color: white; padding: 50px 20px; text-align: center; }
+        
+        /* Footer */
+        footer { background-color: #222; color: #ccc; text-align: center; padding: 20px; margin-top: 50px; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container { flex-direction: column; }
+            nav { margin-top: 15px; }
+            nav a { display: block; margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">RAYOS X GUAYAS</div>
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#seguro">Plan Anual</a>
+                <a href="#franquicia">Inversionistas</a>
+                <a href="https://wa.me/593999999999" class="btn btn-urgencia">PEDIR RAYOS X</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h1>Radiografías a Domicilio en Todo Guayas</h1>
+        <p>Tecnología hospitalaria en la comodidad de tu hogar. Ideal para adultos mayores y pacientes con movilidad reducida.</p>
+        <br>
+        <a href="https://wa.me/593999999999" class="btn btn-secundario">Solicitar Atención Ahora</a>
+    </section>
+
+    <div id="servicios" class="container">
+        <h2 style="text-align: center;">¿Por qué elegirnos?</h2>
+        <div class="grid-3">
+            <div class="card">
+                <h3>🏠 Vamos a tu hogar</h3>
+                <p>No muevas al paciente. Llevamos equipos portátiles de alta definición a donde estés.</p>
+            </div>
+            <div class="card">
+                <h3>👨‍⚕️ Profesionales Certificados</h3>
+                <p>Tecnólogos médicos realizan la toma y especialistas entregan el informe diagnóstico.</p>
+            </div>
+            <div class="card">
+                <h3>⏱️ Atención 24/7</h3>
+                <p>Emergencias y horarios programados. Cubrimos todo Guayas con rapidez.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="seguro" class="container">
+        <div class="seguro-section">
+            <h2>Plan "Cobertura Total"</h2>
+            <p>Asegura la tranquilidad de tu familia con nuestra membresía anual.</p>
+            <div class="precio">$100 <span style="font-size: 1rem;">/ año</span></div>
+            <ul style="list-style: none; padding: 0;">
+                <li>✅ Asistencia Prioritaria 24/7</li>
+                <li>✅ Cobertura en todo Guayas</li>
+                <li>✅ Registro de múltiples beneficiarios</li>
+                <li>✅ Descuentos en otros exámenes</li>
+            </ul>
+            <p><small>*Servicio sujeto a prescripción médica obligatoria.</small></p>
+            <a href="#" class="btn btn-primario">Afiliarme al Plan</a>
+        </div>
+    </div>
+
+    <section id="franquicia" class="franquicia-section">
+        <h2>💼 Oportunidad de Negocio: Franquicias</h2>
+        <p>Lleva este modelo exitoso a tu ciudad (Quito, Cuenca, Manta, etc.)</p>
+        <div class="container grid-3" style="color: #333; text-align: left;">
+            <div class="card">
+                <h4>Tu Rol (Socio)</h4>
+                <p>Dispones del vehículo y gestionas la logística local.</p>
+            </div>
+            <div class="card">
+                <h4>Nuestro Rol</h4>
+                <p>Te financiamos los equipos médicos y gestionamos los cobros.</p>
+            </div>
+            <div class="card">
+                <h4>Ganancias</h4>
+                <p>Recibe el 30% directo + porcentaje para cubrir financiamiento.</p>
+            </div>
+        </div>
+        <br>
+        <a href="mailto:tuemail@ejemplo.com" class="btn btn-secundario">Quiero ser Franquiciado</a>
+    </section>
+
+    <footer>
+        <p>© 2024 Rayos X Guayas - Todos los derechos reservados.</p>
+        <p>Contacto: info@tuempresa.com | Guayaquil, Ecuador</p>
+    </footer>
+
+</body>
+</html>
